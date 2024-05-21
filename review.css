@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family: sans-serif;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  section{
+    width: 100%;
+    
+  }
+  section nav{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background-color: rgb(250, 252, 250);
+    box-shadow: 0 0 10px rgba(19, 19, 19, 0.5);
+    z-index: 1000;
+  }
+  
+  section nav .logo img{
+    width: 107px;
+    cursor: pointer;
+    margin: 7px 0;
+  }
+  
+  section nav ul{
+    list-style: none;
+  }
+  
+  section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  section nav li a{
+    text-decoration: none;
+    color:#C6BEBE;
+    font-weight: 500;
+    font-size: 30px;
+    transition: 0.1s;
+  }
+  
+  section nav li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: palevioletred;
+    display: block;
+    transition: 0.2s linear;
+  }
+  
+  section nav li a:hover::after{
+    width: 100%;
+  }
+  
+  section nav ul li a:hover{
+    color: palevioletred;
+  }
+  
+  section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 130px;
+  }
+    section h2 {
+      margin-bottom: 10px;
+    }
+    section#produk {
+      padding: 50px;
+      text-align: center;
+    }
+    
+    section#produk h2 {
+      margin-bottom: 20px;
+      color: #0f0f0f;
+    }
+    
+    .produk-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .produk {
+      width: 200px;
+      margin: 10px;
+    }
+    
+    .produk img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    
+    .produk h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .produk p {
+      margin-bottom: 10px;
+    }
